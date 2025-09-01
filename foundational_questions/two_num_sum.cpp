@@ -1,19 +1,22 @@
 #include <iostream>
+using namespace std;
+
+int add(int a, int b){
+    return (a+b);
+}
 
 int main(){
-    int firstNum, secondNum;
+    int first_num, second_num;
     
-    // taking user input
-    std::cout << "Enter first number: ";
-    std::cin >> firstNum;
+    cout << "Enter the first number : " << endl;
+    cin >> first_num;
+    
+    cout << "Enter the second number : " << endl;
+    cin >> second_num;
 
-    std::cout << "Enter second number: ";
-    std::cin >> secondNum;
- 
-    int sum = firstNum + secondNum;
-
-    // displaying the sum
-    std::cout << "Sum = " << sum << std::endl;
-
+    int result = add(first_num, second_num);
+    
+    cout << "The sum is : "<< result << endl;
+    
     return 0;
 }
